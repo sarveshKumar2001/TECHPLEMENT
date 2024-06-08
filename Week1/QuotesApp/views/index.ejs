@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/main.css" />
+  <title>Quotes API</title>
+</head>
+
+<body>
+
+
+  <div>
+    <div class="container">
+      <h1>Quote of the Day ⛩️</h1>
+      <div class="quotes">
+        <%= result %>
+      </div>
+      <div>~ <%= author %>
+      </div>
+      <form method="post">
+        <input type="text" class="search-box" name="id" placeholder="Search by Author" />
+        <input class="search-button" type="submit" value="Search" formaction="/results" />
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
